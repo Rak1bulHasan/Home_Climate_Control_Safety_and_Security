@@ -10,7 +10,6 @@
 #define BLYNK_TEMPLATE_ID ""
 #define BLYNK_TEMPLATE_NAME ""
 #define BLYNK_AUTH_TOKEN ""
-
 #define BLYNK_PRINT Serial
 
 #include <ESP8266WiFi.h>
@@ -19,15 +18,9 @@
 
 //#include <DHT.h>
 
-
- 
-
 // You should get Auth Token in the Blynk App.
 
 // Go to the Project Settings (nut icon).
-
-
- 
 
 // Your WiFi credentials.
 
@@ -79,8 +72,8 @@ void setup()
   // Debug console
 
   Serial.begin(9600);
-  Serial.begin(115200);
- 
+  Serial.begin(115200); //this will print the serial.read data from arduino-1 to nodeMCU. To see the data on
+                        // serial monitor select baudrate to 115200
   pinMode(D1, INPUT);
   pinMode(D0, INPUT);
   pinMode(D2, INPUT);
