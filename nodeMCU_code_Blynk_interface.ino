@@ -50,9 +50,7 @@ void new_map()
 
 {
   float myFloat = 0;
-  // You can send any value at any time.
   //float t = (((analogRead(temp) - 0)*(125-(-40)))/(1023))+(-40); //new_val = ((old_val - old_lower_lim)*(new_range))/(old_range) + new_lower_lim
-  // Please don't send more that 10 values per second.
   if (Serial.available() > 0) {
     myFloat = Serial.parseFloat();
 
