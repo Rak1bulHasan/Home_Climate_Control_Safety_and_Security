@@ -62,6 +62,9 @@ void new_map()
   //Serial.println(t);
   }
   Blynk.virtualWrite(V6, myFloat);
+ /*
+    This pins are from the same pins that are connected to arduino-3 to issue the warnings
+  */
   Blynk.virtualWrite(V1, digitalRead(D1));
   Blynk.virtualWrite(V0, digitalRead(D0));
   Blynk.virtualWrite(V2, digitalRead(D2));
